@@ -1,0 +1,40 @@
+@import 'breakpoints.scss';
+
+.links {
+   padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  right: 1em;
+  text-align: center;
+
+  li {
+    display: inline-block;
+    list-style-type: none;
+  }
+
+  a, a:visited {
+    color: rgba(255,255,255,.5);
+    text-decoration: none;
+    padding: .5em 1em;
+    display: inline-block;
+    transition: color .3s;
+
+    &:hover, &:active {
+      color: rgba(255,255,255,.9);
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint_1) {
+  .links {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: $breakpoint_2) {
+  .links {
+    font-size: 28px;
+  }
+}
