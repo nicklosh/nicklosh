@@ -1,4 +1,4 @@
-@import 'breakpoints.scss';
+@use 'abstracts/breakpoints' as bps;
 
 .links {
    padding: 0;
@@ -27,13 +27,13 @@
   }
 }
 
-@media screen and (min-width: $breakpoint_1) {
+@media screen and (min-width: bps.$breakpoint_1) {
   .links {
     font-size: 24px;
   }
 }
 
-@media screen and (min-width: $breakpoint_2) {
+@media screen and (min-width: bps.$breakpoint_2) {
   .links {
     font-size: 28px;
   }
